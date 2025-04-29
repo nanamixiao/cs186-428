@@ -32,4 +32,30 @@ The recursions function will never stop .
 
 
 # III 
+···cpp
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+int Sum(int low , const int hight) {
+    if (hight == low){
+        return hight;
+    } else{
+        return (hight + Sum(low,hight-1));
+    }
+
+
+
+
+}
+int main() {
+
+
+    return 0;
+}
+
+···
 
