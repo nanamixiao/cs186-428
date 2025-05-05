@@ -37,12 +37,14 @@ The recursions function will never stop .
 ```cpp
 
 
+
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
 
-int Sum(int low , const int hight) {
+int Sum(int low ,  int hight) {
     if (hight == low){
         return hight;
     } else{
@@ -58,6 +60,7 @@ int main() {
 
     return 0;
 }
+
 
 ```
 
