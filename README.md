@@ -59,3 +59,35 @@ int main() {
 
 ```
 
+# IV 
+``` cpp
+using namespace std;
+
+struct Node {
+    bool isNumber;
+    int  value{};
+    vector<Node> list;
+
+
+    Node(int v )
+            : isNumber(true), value(v) {}
+
+    Node(initializer_list<Node> a)
+            : isNumber(false), list(a) {}
+};
+
+
+void printAll( Node n)
+{
+    if (n.isNumber) {
+        cout << n.value << ' ';
+    } else {
+        for ( auto m : n.list)
+            printAll(m);
+    }
+}
+
+```
+## video
+
+
